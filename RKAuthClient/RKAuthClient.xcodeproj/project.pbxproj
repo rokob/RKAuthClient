@@ -19,6 +19,8 @@
 		874C21C718C987C10030EF7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C21C618C987C10030EF7D /* main.m */; };
 		874C21CB18C987C10030EF7D /* RKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C21CA18C987C10030EF7D /* RKAppDelegate.m */; };
 		874C21CD18C987C10030EF7D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874C21CC18C987C10030EF7D /* Images.xcassets */; };
+		874C21F818C99A2C0030EF7D /* RKAuthClientTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C21F718C99A2C0030EF7D /* RKAuthClientTypes.m */; };
+		874C21FB18C99A360030EF7D /* RKAuthClientFirebase.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C21FA18C99A360030EF7D /* RKAuthClientFirebase.m */; };
 		A84086AB325247CA852EFCCF /* libPods-RKAuthClientExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F6119488D345C9861136E7 /* libPods-RKAuthClientExample.a */; };
 		BF808001913F48F59D971EF9 /* libPods-RKAuthClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA966B57311B46EE9139952A /* libPods-RKAuthClientTests.a */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,9 @@
 		874C21F018C98D340030EF7D /* RKAuthClientTwitterHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientTwitterHandler.h; path = RKAuthClient/RKAuthClientTwitterHandler.h; sourceTree = "<group>"; };
 		874C21F118C98D340030EF7D /* RKAuthClientTwitterHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientTwitterHandler.m; path = RKAuthClient/RKAuthClientTwitterHandler.m; sourceTree = "<group>"; };
 		874C21F218C98D340030EF7D /* RKAuthClientTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientTypes.h; path = RKAuthClient/RKAuthClientTypes.h; sourceTree = "<group>"; };
+		874C21F718C99A2C0030EF7D /* RKAuthClientTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientTypes.m; path = RKAuthClient/RKAuthClientTypes.m; sourceTree = "<group>"; };
+		874C21F918C99A360030EF7D /* RKAuthClientFirebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKAuthClientFirebase.h; path = RKAuthClient/RKAuthClientFirebase.h; sourceTree = "<group>"; };
+		874C21FA18C99A360030EF7D /* RKAuthClientFirebase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientFirebase.m; path = RKAuthClient/RKAuthClientFirebase.m; sourceTree = "<group>"; };
 		96F6119488D345C9861136E7 /* libPods-RKAuthClientExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RKAuthClientExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA966B57311B46EE9139952A /* libPods-RKAuthClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RKAuthClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -198,8 +203,19 @@
 				874C21F018C98D340030EF7D /* RKAuthClientTwitterHandler.h */,
 				874C21F118C98D340030EF7D /* RKAuthClientTwitterHandler.m */,
 				874C21F218C98D340030EF7D /* RKAuthClientTypes.h */,
+				874C21F718C99A2C0030EF7D /* RKAuthClientTypes.m */,
+				874C21F418C998150030EF7D /* Firebase */,
 			);
 			name = RKAuthClient;
+			sourceTree = "<group>";
+		};
+		874C21F418C998150030EF7D /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				874C21F918C99A360030EF7D /* RKAuthClientFirebase.h */,
+				874C21FA18C99A360030EF7D /* RKAuthClientFirebase.m */,
+			);
+			name = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +374,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				874C21B218C987A30030EF7D /* RKAuthClientTests.m in Sources */,
+				874C21F818C99A2C0030EF7D /* RKAuthClientTypes.m in Sources */,
+				874C21FB18C99A360030EF7D /* RKAuthClientFirebase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
