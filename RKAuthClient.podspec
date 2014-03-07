@@ -1,37 +1,29 @@
-#
-# Be sure to run `pod spec lint NAME.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# To learn more about the attributes see http://guides.cocoapods.org/syntax/podspec.html
-#
 Pod::Spec.new do |s|
   s.name             = "RKAuthClient"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of RKAuthClient."
+  s.version          = "0.0.1"
+  s.summary          = "RKAuthClient - An Authorization Facade"
   s.description      = <<-DESC
-                       An optional longer description of RKAuthClient
+                       =RKAuthClient
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       This is a library built to act as a facade between your application
+                       and any number of possible backend authorization systems.
+                       Write once against this API and then plug in whatever backend
+                       adapter you wish to actually use. Decide to change your backend
+                       and you only have to change a handful of lines rather than
+                       your entire authorization logic.
                        DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/rokob/RKAuthClient"
   s.license          = 'MIT'
-  s.author           = { "Andrew Ledvina" => "led@fb.com" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/NAME'
+  s.author           = { "Andrew Ledvina" => "wvvwwvw@gmail.com" }
+  s.source           = { :git => "https://github.com/rokob/RKAuthClient.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/wolfgangfavian'
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
-  s.source_files = 'Classes'
-  s.resources = 'Resources'
+  s.source_files = 'RKAuthClient/RKAuthClient'
 
-  s.ios.exclude_files = 'Classes/osx'
-  s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
+  s.public_header_files = 'RKAuthClient/RKAuthClient/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
   # s.dependency 'JSONKit', '~> 1.4'
 end
