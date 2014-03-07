@@ -1,0 +1,15 @@
+xcodeproj 'RKAuthClient'
+workspace '../RKAuthClient'
+
+platform :ios, '7.0'
+
+target :RKAuthClientExample do
+  pod 'RKAuthClient', :path => '../'
+end
+
+target :RKAuthClientTests do
+  pod 'Expecta', '~> 0.2.3'
+  pod 'Specta',  '~> 0.2.1'
+  pod 'OCMock',  '~> 2.2'
+  pod 'RKAuthClient', :path => '../'
+end
