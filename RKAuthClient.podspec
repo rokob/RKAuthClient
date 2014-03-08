@@ -16,14 +16,17 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Andrew Ledvina" => "wvvwwvw@gmail.com" }
   s.source           = { :git => "https://github.com/rokob/RKAuthClient.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/wolfgangfavian'
+  s.social_media_url = 'https://twitter.com/wolfgangfabian'
 
   s.platform     = :ios, '6.0'
   s.requires_arc = true
 
+  s.public_header_files = 'RKAuthClient/RKAuthClient/**/*.h'
   s.source_files = 'RKAuthClient/RKAuthClient'
 
-  s.public_header_files = 'RKAuthClient/RKAuthClient/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.dependency 'JSONKit', '~> 1.4'
+  s.subspec 'Firebase' do |ss|
+    ss.dependency 'Firebase', '~> 1.0.0'
+    ss.frameworks = 'SystemConfiguration'
+    ss.source_files = 'RKAuthClient/RKAuthClient/Firebase'
+  end
 end

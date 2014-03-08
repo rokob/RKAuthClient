@@ -19,8 +19,6 @@
 		874C21C718C987C10030EF7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C21C618C987C10030EF7D /* main.m */; };
 		874C21CB18C987C10030EF7D /* RKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C21CA18C987C10030EF7D /* RKAppDelegate.m */; };
 		874C21CD18C987C10030EF7D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874C21CC18C987C10030EF7D /* Images.xcassets */; };
-		874C21F818C99A2C0030EF7D /* RKAuthClientTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C21F718C99A2C0030EF7D /* RKAuthClientTypes.m */; };
-		874C21FB18C99A360030EF7D /* RKAuthClientFirebase.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C21FA18C99A360030EF7D /* RKAuthClientFirebase.m */; };
 		A84086AB325247CA852EFCCF /* libPods-RKAuthClientExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F6119488D345C9861136E7 /* libPods-RKAuthClientExample.a */; };
 		BF808001913F48F59D971EF9 /* libPods-RKAuthClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA966B57311B46EE9139952A /* libPods-RKAuthClientTests.a */; };
 /* End PBXBuildFile section */
@@ -61,8 +59,16 @@
 		874C21F118C98D340030EF7D /* RKAuthClientTwitterHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientTwitterHandler.m; path = RKAuthClient/RKAuthClientTwitterHandler.m; sourceTree = "<group>"; };
 		874C21F218C98D340030EF7D /* RKAuthClientTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientTypes.h; path = RKAuthClient/RKAuthClientTypes.h; sourceTree = "<group>"; };
 		874C21F718C99A2C0030EF7D /* RKAuthClientTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientTypes.m; path = RKAuthClient/RKAuthClientTypes.m; sourceTree = "<group>"; };
-		874C21F918C99A360030EF7D /* RKAuthClientFirebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKAuthClientFirebase.h; path = RKAuthClient/RKAuthClientFirebase.h; sourceTree = "<group>"; };
-		874C21FA18C99A360030EF7D /* RKAuthClientFirebase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientFirebase.m; path = RKAuthClient/RKAuthClientFirebase.m; sourceTree = "<group>"; };
+		874C220818CB70F30030EF7D /* RKAuthClientFirebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientFirebase.h; path = RKAuthClient/Firebase/RKAuthClientFirebase.h; sourceTree = "<group>"; };
+		874C220918CB70F30030EF7D /* RKAuthClientFirebase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientFirebase.m; path = RKAuthClient/Firebase/RKAuthClientFirebase.m; sourceTree = "<group>"; };
+		874C220A18CB72820030EF7D /* RKAuthClientFirebaseBasicHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientFirebaseBasicHandler.h; path = RKAuthClient/Firebase/RKAuthClientFirebaseBasicHandler.h; sourceTree = "<group>"; };
+		874C220B18CB72820030EF7D /* RKAuthClientFirebaseBasicHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientFirebaseBasicHandler.m; path = RKAuthClient/Firebase/RKAuthClientFirebaseBasicHandler.m; sourceTree = "<group>"; };
+		874C220C18CB777E0030EF7D /* RKAuthClientFirebaseEmailHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientFirebaseEmailHandler.h; path = RKAuthClient/Firebase/RKAuthClientFirebaseEmailHandler.h; sourceTree = "<group>"; };
+		874C220D18CB777E0030EF7D /* RKAuthClientFirebaseEmailHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientFirebaseEmailHandler.m; path = RKAuthClient/Firebase/RKAuthClientFirebaseEmailHandler.m; sourceTree = "<group>"; };
+		874C220E18CB78FD0030EF7D /* RKAuthClientFirebaseFacebookHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientFirebaseFacebookHandler.h; path = RKAuthClient/Firebase/RKAuthClientFirebaseFacebookHandler.h; sourceTree = "<group>"; };
+		874C220F18CB78FD0030EF7D /* RKAuthClientFirebaseFacebookHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientFirebaseFacebookHandler.m; path = RKAuthClient/Firebase/RKAuthClientFirebaseFacebookHandler.m; sourceTree = "<group>"; };
+		874C221018CB79180030EF7D /* RKAuthClientFirebaseTwitterHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientFirebaseTwitterHandler.h; path = RKAuthClient/Firebase/RKAuthClientFirebaseTwitterHandler.h; sourceTree = "<group>"; };
+		874C221118CB79180030EF7D /* RKAuthClientFirebaseTwitterHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientFirebaseTwitterHandler.m; path = RKAuthClient/Firebase/RKAuthClientFirebaseTwitterHandler.m; sourceTree = "<group>"; };
 		96F6119488D345C9861136E7 /* libPods-RKAuthClientExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RKAuthClientExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA966B57311B46EE9139952A /* libPods-RKAuthClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RKAuthClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -212,8 +218,16 @@
 		874C21F418C998150030EF7D /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				874C21F918C99A360030EF7D /* RKAuthClientFirebase.h */,
-				874C21FA18C99A360030EF7D /* RKAuthClientFirebase.m */,
+				874C220818CB70F30030EF7D /* RKAuthClientFirebase.h */,
+				874C220918CB70F30030EF7D /* RKAuthClientFirebase.m */,
+				874C220A18CB72820030EF7D /* RKAuthClientFirebaseBasicHandler.h */,
+				874C220B18CB72820030EF7D /* RKAuthClientFirebaseBasicHandler.m */,
+				874C220C18CB777E0030EF7D /* RKAuthClientFirebaseEmailHandler.h */,
+				874C220D18CB777E0030EF7D /* RKAuthClientFirebaseEmailHandler.m */,
+				874C220E18CB78FD0030EF7D /* RKAuthClientFirebaseFacebookHandler.h */,
+				874C220F18CB78FD0030EF7D /* RKAuthClientFirebaseFacebookHandler.m */,
+				874C221018CB79180030EF7D /* RKAuthClientFirebaseTwitterHandler.h */,
+				874C221118CB79180030EF7D /* RKAuthClientFirebaseTwitterHandler.m */,
 			);
 			name = Firebase;
 			sourceTree = "<group>";
@@ -374,8 +388,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				874C21B218C987A30030EF7D /* RKAuthClientTests.m in Sources */,
-				874C21F818C99A2C0030EF7D /* RKAuthClientTypes.m in Sources */,
-				874C21FB18C99A360030EF7D /* RKAuthClientFirebase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
