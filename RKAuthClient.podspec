@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "RKAuthClient"
-  s.version          = "0.0.2"
+  s.version          = "0.0.3"
   s.summary          = "RKAuthClient - An Authorization Facade"
   s.description      = <<-DESC
                        =RKAuthClient
@@ -25,8 +25,19 @@ Pod::Spec.new do |s|
   s.source_files = 'RKAuthClient/RKAuthClient'
 
   s.subspec 'Firebase' do |ss|
+    ss.dependency 'RKAuthClient/Core'
     ss.dependency 'Firebase', '~> 1.0.0'
     ss.frameworks = 'SystemConfiguration'
     ss.source_files = 'RKAuthClient/RKAuthClient/Firebase'
+  end
+
+  s.subspec 'Core' do |ss|
+    ss.source_files = 'RKAuthClient/RKAuthClient/RKAuthClient.{h,m}',
+                      'RKAuthClient/RKAuthClient/RKAuthClientBasicHandler.{h,m}',
+                      'RKAuthClient/RKAuthClient/RKAuthClientEmailHandler.{h,m}',
+                      'RKAuthClient/RKAuthClient/RKAuthClientFacebookHandler.{h,m}',
+                      'RKAuthClient/RKAuthClient/RKAuthClientTwitterHandler.{h,m}',
+                      'RKAuthClient/RKAuthClient/RKAuthClientTypes.{h,m}',
+                      'RKAuthClient/RKAuthClient/RKAuthClientServices.h'
   end
 end

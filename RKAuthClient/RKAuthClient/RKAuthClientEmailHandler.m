@@ -67,7 +67,7 @@
     NSError *error = [NSError errorWithDomain:kRKAuthClientErrorDomain
                                          code:code
                                      userInfo:nil];
-    completionBlock(nil, error);
+    completionBlock(error, NO);
   });
 }
 
