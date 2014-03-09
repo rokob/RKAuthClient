@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import "RKAuthClient.h"
+
 @interface RKAuthClientParse : NSObject
+
++ (RKAuthClient *)parseAuthClient;
 
 @end

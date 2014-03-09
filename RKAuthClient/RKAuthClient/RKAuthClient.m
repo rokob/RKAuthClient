@@ -198,7 +198,7 @@
 
 + (instancetype)defaultConfiguration
 {
-  id <RKAuthClientBasic> basicHandler = [[RKAuthClientBasicHandler alloc] init];
+  id<RKAuthClientBasic> basicHandler = [[RKAuthClientBasicHandler alloc] init];
   id<RKAuthClientEmail> emailHandler = [[RKAuthClientEmailHandler alloc] init];
   id<RKAuthClientFacebook> facebookHandler = [[RKAuthClientFacebookHandler alloc] init];
   id<RKAuthClientTwitter> twitterHandler = [[RKAuthClientTwitterHandler alloc] init];

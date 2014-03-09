@@ -2,6 +2,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RKAuthClientFirebaseTwitterHandler : NSObject
+#import "RKAuthClientServices.h"
+
+@interface RKAuthClientFirebaseTwitterHandler : NSObject <RKAuthClientTwitter>
 
 @end

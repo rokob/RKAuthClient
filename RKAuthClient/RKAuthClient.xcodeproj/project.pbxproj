@@ -71,6 +71,14 @@
 		874C221118CB79180030EF7D /* RKAuthClientFirebaseTwitterHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientFirebaseTwitterHandler.m; path = RKAuthClient/Firebase/RKAuthClientFirebaseTwitterHandler.m; sourceTree = "<group>"; };
 		874C221818CBEA330030EF7D /* RKAuthClientParse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientParse.h; path = RKAuthClient/Parse/RKAuthClientParse.h; sourceTree = "<group>"; };
 		874C221918CBEA330030EF7D /* RKAuthClientParse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientParse.m; path = RKAuthClient/Parse/RKAuthClientParse.m; sourceTree = "<group>"; };
+		87E644A518CCFE0600B0FBBD /* RKAuthClientParseBasicHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientParseBasicHandler.h; path = RKAuthClient/Parse/RKAuthClientParseBasicHandler.h; sourceTree = "<group>"; };
+		87E644A618CCFE0600B0FBBD /* RKAuthClientParseBasicHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientParseBasicHandler.m; path = RKAuthClient/Parse/RKAuthClientParseBasicHandler.m; sourceTree = "<group>"; };
+		87E644A718CCFE1B00B0FBBD /* RKAuthClientParseEmailHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientParseEmailHandler.h; path = RKAuthClient/Parse/RKAuthClientParseEmailHandler.h; sourceTree = "<group>"; };
+		87E644A818CCFE1B00B0FBBD /* RKAuthClientParseEmailHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientParseEmailHandler.m; path = RKAuthClient/Parse/RKAuthClientParseEmailHandler.m; sourceTree = "<group>"; };
+		87E644A918CCFE3100B0FBBD /* RKAuthClientParseFacebookHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientParseFacebookHandler.h; path = RKAuthClient/Parse/RKAuthClientParseFacebookHandler.h; sourceTree = "<group>"; };
+		87E644AA18CCFE3100B0FBBD /* RKAuthClientParseFacebookHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientParseFacebookHandler.m; path = RKAuthClient/Parse/RKAuthClientParseFacebookHandler.m; sourceTree = "<group>"; };
+		87E644AB18CCFE4500B0FBBD /* RKAuthClientParseTwitterHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientParseTwitterHandler.h; path = RKAuthClient/Parse/RKAuthClientParseTwitterHandler.h; sourceTree = "<group>"; };
+		87E644AC18CCFE4500B0FBBD /* RKAuthClientParseTwitterHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientParseTwitterHandler.m; path = RKAuthClient/Parse/RKAuthClientParseTwitterHandler.m; sourceTree = "<group>"; };
 		96F6119488D345C9861136E7 /* libPods-RKAuthClientExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RKAuthClientExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA966B57311B46EE9139952A /* libPods-RKAuthClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RKAuthClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -240,6 +248,14 @@
 			children = (
 				874C221818CBEA330030EF7D /* RKAuthClientParse.h */,
 				874C221918CBEA330030EF7D /* RKAuthClientParse.m */,
+				87E644A518CCFE0600B0FBBD /* RKAuthClientParseBasicHandler.h */,
+				87E644A618CCFE0600B0FBBD /* RKAuthClientParseBasicHandler.m */,
+				87E644A718CCFE1B00B0FBBD /* RKAuthClientParseEmailHandler.h */,
+				87E644A818CCFE1B00B0FBBD /* RKAuthClientParseEmailHandler.m */,
+				87E644A918CCFE3100B0FBBD /* RKAuthClientParseFacebookHandler.h */,
+				87E644AA18CCFE3100B0FBBD /* RKAuthClientParseFacebookHandler.m */,
+				87E644AB18CCFE4500B0FBBD /* RKAuthClientParseTwitterHandler.h */,
+				87E644AC18CCFE4500B0FBBD /* RKAuthClientParseTwitterHandler.m */,
 			);
 			name = Parse;
 			sourceTree = "<group>";

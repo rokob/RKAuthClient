@@ -4,8 +4,10 @@
 
 #import "RKAuthClient.h"
 
+@class Firebase;
+
 @interface RKAuthClientFirebase : NSObject
 
-+ (RKAuthClient *)firebaseAuthClient;
++ (RKAuthClient *)firebaseAuthClientWithFirebase:(Firebase *)firebase;
 
 @end

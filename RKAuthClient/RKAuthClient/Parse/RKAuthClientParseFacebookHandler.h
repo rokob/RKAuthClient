@@ -4,6 +4,6 @@
 
 #import "RKAuthClientServices.h"
 
-@interface RKAuthClientFirebaseEmailHandler : NSObject <RKAuthClientEmail>
+@interface RKAuthClientParseFacebookHandler : NSObject <RKAuthClientFacebook>
 
 @end
