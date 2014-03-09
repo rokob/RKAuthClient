@@ -2,23 +2,27 @@
 
 #import "RKAuthClientParseBasicHandler.h"
 
-#import <Parse/Parse.h>
+#import "PFUser+RKAuthClient.h"
 
 @implementation RKAuthClientParseBasicHandler
 
 - (void)checkAuthStatusWithBlock:(RKAuthClientUserBlock)block callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  PFUser *user = [PFUser currentUser];
   dispatch_async(callbackQueue, ^{
-    NSError *error = [NSError errorWithDomain:kRKAuthClientErrorDomain
-                                         code:RKAuthClientBasicHandlerErrorUnimplemented
+    NSError *error = nil;
+    if (!user) {
+      error = [NSError errorWithDomain:kRKAuthClientErrorDomain
+                                         code:RKAuthClientBasicHandlerErrorNoUser
                                      userInfo:nil];
-    block(nil, error);
+    }
+    block(user, error);
   });
 }
 
 - (void)logout
 {
-  // do nothing
+  [PFUser logOut];
 }
 
 @end

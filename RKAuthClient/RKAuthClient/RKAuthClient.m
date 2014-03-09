@@ -122,7 +122,7 @@
 - (void)changePasswordForEmail:(NSString *)email
                    oldPassword:(NSString *)oldPassword
                    newPassword:(NSString *)newPassword
-                    completion:(RKAuthClientPasswordChangeBlock)completionBlock
+                    completion:(RKAuthClientSuccessBlock)completionBlock
                  callbackQueue:(dispatch_queue_t)callbackQueue
 {
   [_emailHandler changePasswordForEmail:email
@@ -133,7 +133,7 @@
 }
 
 - (void)sendPasswordResetForEmail:(NSString *)email
-                       completion:(RKAuthClientErrorBlock)completionBlock
+                       completion:(RKAuthClientSuccessBlock)completionBlock
                     callbackQueue:(dispatch_queue_t)callbackQueue
 {
   [_emailHandler sendPasswordResetForEmail:email completion:completionBlock callbackQueue:callbackQueue];
@@ -141,7 +141,7 @@
 
 - (void)removeUserWithEmail:(NSString *)email
                    password:(NSString *)password
-                 completion:(RKAuthClientErrorBlock)completionBlock
+                 completion:(RKAuthClientSuccessBlock)completionBlock
               callbackQueue:(dispatch_queue_t)callbackQueue
 {
   [_emailHandler removeUserWithEmail:email password:password completion:completionBlock callbackQueue:callbackQueue];
@@ -163,7 +163,7 @@
                                callbackQueue:callbackQueue];
 }
 
-- (void)disconnectFromFacebookWithCompletion:(RKAuthClientErrorBlock)completionBlock
+- (void)disconnectFromFacebookWithCompletion:(RKAuthClientSuccessBlock)completionBlock
                                callbackQueue:(dispatch_queue_t)callbackQueue
 {
   [_facebookHandler disconnectFromFacebookWithCompletion:completionBlock callbackQueue:callbackQueue];
@@ -183,7 +183,7 @@
                              callbackQueue:callbackQueue];
 }
 
-- (void)disconnectFromTwitterWithCompletion:(RKAuthClientErrorBlock)completionBlock
+- (void)disconnectFromTwitterWithCompletion:(RKAuthClientSuccessBlock)completionBlock
                               callbackQueue:(dispatch_queue_t)callbackQueue
 {
   [_twitterHandler disconnectFromTwitterWithCompletion:completionBlock callbackQueue:callbackQueue];

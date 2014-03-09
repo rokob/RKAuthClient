@@ -79,6 +79,8 @@
 		87E644AA18CCFE3100B0FBBD /* RKAuthClientParseFacebookHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientParseFacebookHandler.m; path = RKAuthClient/Parse/RKAuthClientParseFacebookHandler.m; sourceTree = "<group>"; };
 		87E644AB18CCFE4500B0FBBD /* RKAuthClientParseTwitterHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientParseTwitterHandler.h; path = RKAuthClient/Parse/RKAuthClientParseTwitterHandler.h; sourceTree = "<group>"; };
 		87E644AC18CCFE4500B0FBBD /* RKAuthClientParseTwitterHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientParseTwitterHandler.m; path = RKAuthClient/Parse/RKAuthClientParseTwitterHandler.m; sourceTree = "<group>"; };
+		87E644AD18CD183500B0FBBD /* PFUser+RKAuthClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PFUser+RKAuthClient.h"; path = "RKAuthClient/Parse/PFUser+RKAuthClient.h"; sourceTree = "<group>"; };
+		87E644AE18CD183500B0FBBD /* PFUser+RKAuthClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "PFUser+RKAuthClient.m"; path = "RKAuthClient/Parse/PFUser+RKAuthClient.m"; sourceTree = "<group>"; };
 		96F6119488D345C9861136E7 /* libPods-RKAuthClientExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RKAuthClientExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA966B57311B46EE9139952A /* libPods-RKAuthClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RKAuthClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -248,6 +250,8 @@
 			children = (
 				874C221818CBEA330030EF7D /* RKAuthClientParse.h */,
 				874C221918CBEA330030EF7D /* RKAuthClientParse.m */,
+				87E644AD18CD183500B0FBBD /* PFUser+RKAuthClient.h */,
+				87E644AE18CD183500B0FBBD /* PFUser+RKAuthClient.m */,
 				87E644A518CCFE0600B0FBBD /* RKAuthClientParseBasicHandler.h */,
 				87E644A618CCFE0600B0FBBD /* RKAuthClientParseBasicHandler.m */,
 				87E644A718CCFE1B00B0FBBD /* RKAuthClientParseEmailHandler.h */,

@@ -51,7 +51,7 @@
 - (void)changePasswordForEmail:(NSString *)email
                    oldPassword:(NSString *)oldPassword
                    newPassword:(NSString *)newPassword
-                    completion:(RKAuthClientPasswordChangeBlock)completionBlock
+                    completion:(RKAuthClientSuccessBlock)completionBlock
                  callbackQueue:(dispatch_queue_t)callbackQueue
 {
   if (!completionBlock) {
@@ -72,7 +72,7 @@
 }
 
 - (void)sendPasswordResetForEmail:(NSString *)email
-                       completion:(RKAuthClientErrorBlock)completionBlock
+                       completion:(RKAuthClientSuccessBlock)completionBlock
                     callbackQueue:(dispatch_queue_t)callbackQueue
 {
   if (!completionBlock) {
@@ -88,13 +88,13 @@
     NSError *error = [NSError errorWithDomain:kRKAuthClientErrorDomain
                                          code:code
                                      userInfo:nil];
-    completionBlock(error);
+    completionBlock(error, NO);
   });
 }
 
 - (void)removeUserWithEmail:(NSString *)email
                    password:(NSString *)password
-                 completion:(RKAuthClientErrorBlock)completionBlock
+                 completion:(RKAuthClientSuccessBlock)completionBlock
               callbackQueue:(dispatch_queue_t)callbackQueue
 {
   if (!completionBlock) {
@@ -110,7 +110,7 @@
     NSError *error = [NSError errorWithDomain:kRKAuthClientErrorDomain
                                          code:code
                                      userInfo:nil];
-    completionBlock(error);
+    completionBlock(error, NO);
   });
 }
 

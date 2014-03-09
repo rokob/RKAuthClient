@@ -26,7 +26,7 @@
   });
 }
 
-- (void)disconnectFromTwitterWithCompletion:(RKAuthClientErrorBlock)completionBlock
+- (void)disconnectFromTwitterWithCompletion:(RKAuthClientSuccessBlock)completionBlock
                               callbackQueue:(dispatch_queue_t)callbackQueue
 {
   if (!completionBlock) {
@@ -36,7 +36,7 @@
     NSError *error = [NSError errorWithDomain:kRKAuthClientErrorDomain
                                          code:RKAuthClientTwitterHandlerErrorUnimplemented
                                      userInfo:nil];
-    completionBlock(error);
+    completionBlock(error, NO);
   });
 }
 

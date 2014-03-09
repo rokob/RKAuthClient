@@ -27,7 +27,7 @@
   });
 }
 
-- (void)disconnectFromFacebookWithCompletion:(RKAuthClientErrorBlock)completionBlock
+- (void)disconnectFromFacebookWithCompletion:(RKAuthClientSuccessBlock)completionBlock
                                callbackQueue:(dispatch_queue_t)callbackQueue
 {
   if (!completionBlock) {
@@ -37,7 +37,7 @@
     NSError *error = [NSError errorWithDomain:kRKAuthClientErrorDomain
                                          code:RKAuthClientFacebookHandlerErrorUnimplemented
                                      userInfo:nil];
-    completionBlock(error);
+    completionBlock(error, NO);
   });
 }
 

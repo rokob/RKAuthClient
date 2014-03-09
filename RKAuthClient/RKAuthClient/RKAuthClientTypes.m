@@ -3,3 +3,4 @@
 #import "RKAuthClientTypes.h"
 
 NSString *kRKAuthClientErrorDomain = @"com.rokob.authclient";
+NSString *kRKAuthClientServiceErrorKey = @"kRKAuthClientServiceErrorKey";

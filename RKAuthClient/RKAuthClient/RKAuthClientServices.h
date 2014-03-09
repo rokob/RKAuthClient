@@ -28,16 +28,16 @@
 - (void)changePasswordForEmail:(NSString *)email
                    oldPassword:(NSString *)oldPassword
                    newPassword:(NSString *)newPassword
-                    completion:(RKAuthClientPasswordChangeBlock)completionBlock
+                    completion:(RKAuthClientSuccessBlock)completionBlock
                  callbackQueue:(dispatch_queue_t)callbackQueue;
 
 - (void)sendPasswordResetForEmail:(NSString *)email
-                       completion:(RKAuthClientErrorBlock)completionBlock
+                       completion:(RKAuthClientSuccessBlock)completionBlock
                     callbackQueue:(dispatch_queue_t)callbackQueue;
 
 - (void)removeUserWithEmail:(NSString *)email
                    password:(NSString *)password
-                 completion:(RKAuthClientErrorBlock)completionBlock
+                 completion:(RKAuthClientSuccessBlock)completionBlock
               callbackQueue:(dispatch_queue_t)callbackQueue;
 
 @end
@@ -50,7 +50,7 @@
                       completion:(RKAuthClientUserBlock)completionBlock
                    callbackQueue:(dispatch_queue_t)callbackQueue;
 
-- (void)disconnectFromFacebookWithCompletion:(RKAuthClientErrorBlock)completionBlock
+- (void)disconnectFromFacebookWithCompletion:(RKAuthClientSuccessBlock)completionBlock
                                callbackQueue:(dispatch_queue_t)callbackQueue;
 
 @end
@@ -62,7 +62,7 @@
                      completion:(RKAuthClientUserBlock)completionBlock
                   callbackQueue:(dispatch_queue_t)callbackQueue;
 
-- (void)disconnectFromTwitterWithCompletion:(RKAuthClientErrorBlock)completionBlock
+- (void)disconnectFromTwitterWithCompletion:(RKAuthClientSuccessBlock)completionBlock
                               callbackQueue:(dispatch_queue_t)callbackQueue;
 
 @end
