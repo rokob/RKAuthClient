@@ -1,13 +1,20 @@
 PODS:
   - Expecta (0.2.4)
+  - Facebook-iOS-SDK (3.12.0)
   - Firebase (1.0.9)
   - OCMock (2.2.3)
+  - Parse (1.2.18):
+    - Facebook-iOS-SDK (~> 3.11)
   - RKAuthClient (0.0.3):
     - RKAuthClient/Core
     - RKAuthClient/Firebase
+    - RKAuthClient/Parse
   - RKAuthClient/Core (0.0.3)
   - RKAuthClient/Firebase (0.0.3):
     - Firebase (~> 1.0.0)
+    - RKAuthClient/Core
+  - RKAuthClient/Parse (0.0.3):
+    - Parse (~> 1.2.0)
     - RKAuthClient/Core
   - Specta (0.2.1)
 
@@ -23,9 +30,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Expecta: 5c147dedfea5fbcf773995f7e65020abcc936ce5
+  Facebook-iOS-SDK: c09f7d80db5c48170ff834bc03ebe774c49d1f5b
   Firebase: f88860bb05fde375a236bab7182ecc4e02fe5c93
   OCMock: 74e4ddbcef134170dcc844f91c691f13868075d7
-  RKAuthClient: 7fb43db83139b508d76a8a9c41e6dd33c1a55a1d
+  Parse: 6dd57f2af9f89dc6facc755cec4e96f8b739b1fb
+  RKAuthClient: 69018213aaf9e4872df66e8e5fd12b936b0a4780
   Specta: 2d06220591110c6d9757d8be8ecf8e63aa40dc2a
 
 COCOAPODS: 0.29.0

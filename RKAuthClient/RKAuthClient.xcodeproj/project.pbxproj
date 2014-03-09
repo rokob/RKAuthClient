@@ -69,6 +69,8 @@
 		874C220F18CB78FD0030EF7D /* RKAuthClientFirebaseFacebookHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientFirebaseFacebookHandler.m; path = RKAuthClient/Firebase/RKAuthClientFirebaseFacebookHandler.m; sourceTree = "<group>"; };
 		874C221018CB79180030EF7D /* RKAuthClientFirebaseTwitterHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientFirebaseTwitterHandler.h; path = RKAuthClient/Firebase/RKAuthClientFirebaseTwitterHandler.h; sourceTree = "<group>"; };
 		874C221118CB79180030EF7D /* RKAuthClientFirebaseTwitterHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientFirebaseTwitterHandler.m; path = RKAuthClient/Firebase/RKAuthClientFirebaseTwitterHandler.m; sourceTree = "<group>"; };
+		874C221818CBEA330030EF7D /* RKAuthClientParse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RKAuthClientParse.h; path = RKAuthClient/Parse/RKAuthClientParse.h; sourceTree = "<group>"; };
+		874C221918CBEA330030EF7D /* RKAuthClientParse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RKAuthClientParse.m; path = RKAuthClient/Parse/RKAuthClientParse.m; sourceTree = "<group>"; };
 		96F6119488D345C9861136E7 /* libPods-RKAuthClientExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RKAuthClientExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA966B57311B46EE9139952A /* libPods-RKAuthClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RKAuthClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -211,6 +213,7 @@
 				874C21F218C98D340030EF7D /* RKAuthClientTypes.h */,
 				874C21F718C99A2C0030EF7D /* RKAuthClientTypes.m */,
 				874C21F418C998150030EF7D /* Firebase */,
+				874C221718CBEA0B0030EF7D /* Parse */,
 			);
 			name = RKAuthClient;
 			sourceTree = "<group>";
@@ -230,6 +233,15 @@
 				874C221118CB79180030EF7D /* RKAuthClientFirebaseTwitterHandler.m */,
 			);
 			name = Firebase;
+			sourceTree = "<group>";
+		};
+		874C221718CBEA0B0030EF7D /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				874C221818CBEA330030EF7D /* RKAuthClientParse.h */,
+				874C221918CBEA330030EF7D /* RKAuthClientParse.m */,
+			);
+			name = Parse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,12 +445,16 @@
 		874C219C18C9870D0030EF7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		874C219D18C9870D0030EF7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

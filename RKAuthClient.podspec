@@ -22,13 +22,18 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.public_header_files = 'RKAuthClient/RKAuthClient/**/*.h'
-  s.source_files = 'RKAuthClient/RKAuthClient'
 
   s.subspec 'Firebase' do |ss|
-    ss.dependency 'RKAuthClient/Core'
     ss.dependency 'Firebase', '~> 1.0.0'
+    ss.dependency 'RKAuthClient/Core'
     ss.frameworks = 'SystemConfiguration'
-    ss.source_files = 'RKAuthClient/RKAuthClient/Firebase'
+    ss.source_files = 'RKAuthClient/RKAuthClient/Firebase/**/*.{h,m}'
+  end
+
+  s.subspec 'Parse' do |ss|
+    ss.dependency 'Parse', '~> 1.2.0'
+    ss.dependency 'RKAuthClient/Core'
+    ss.source_files = 'RKAuthClient/RKAuthClient/Parse/**/*.{h,m}'
   end
 
   s.subspec 'Core' do |ss|
