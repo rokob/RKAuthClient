@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "RKAuthClient"
-  s.version          = "0.0.3"
+  s.version          = "0.0.4"
   s.summary          = "RKAuthClient - An Authorization Facade"
   s.description      = <<-DESC
                        =RKAuthClient
