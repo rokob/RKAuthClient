@@ -4,6 +4,10 @@
 
 #import "RKAuthClientServices.h"
 
+@class FirebaseSimpleLogin;
+
 @interface RKAuthClientFirebaseBasicHandler : NSObject <RKAuthClientBasic>
+
+- (instancetype)initWithSimpleLogin:(FirebaseSimpleLogin *)simpleLogin;
 
 @end

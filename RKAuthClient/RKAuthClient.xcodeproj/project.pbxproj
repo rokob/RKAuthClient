@@ -26,6 +26,8 @@
 /* Begin PBXFileReference section */
 		432820000B554C788E92817F /* Pods-RKAuthClientTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAuthClientTests.xcconfig"; path = "Pods/Pods-RKAuthClientTests.xcconfig"; sourceTree = "<group>"; };
 		52BD1C2DF2AD460BBDF8CC13 /* Pods-RKAuthClientExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAuthClientExample.xcconfig"; path = "Pods/Pods-RKAuthClientExample.xcconfig"; sourceTree = "<group>"; };
+		8714D89718D01C8B00CCC71D /* FAUser+RKAuthClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FAUser+RKAuthClient.h"; path = "RKAuthClient/Firebase/FAUser+RKAuthClient.h"; sourceTree = "<group>"; };
+		8714D89818D01C8B00CCC71D /* FAUser+RKAuthClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "FAUser+RKAuthClient.m"; path = "RKAuthClient/Firebase/FAUser+RKAuthClient.m"; sourceTree = "<group>"; };
 		874C21A218C987A30030EF7D /* RKAuthClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKAuthClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		874C21A518C987A30030EF7D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		874C21A718C987A30030EF7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -233,6 +235,8 @@
 			children = (
 				874C220818CB70F30030EF7D /* RKAuthClientFirebase.h */,
 				874C220918CB70F30030EF7D /* RKAuthClientFirebase.m */,
+				8714D89718D01C8B00CCC71D /* FAUser+RKAuthClient.h */,
+				8714D89818D01C8B00CCC71D /* FAUser+RKAuthClient.m */,
 				874C220A18CB72820030EF7D /* RKAuthClientFirebaseBasicHandler.h */,
 				874C220B18CB72820030EF7D /* RKAuthClientFirebaseBasicHandler.m */,
 				874C220C18CB777E0030EF7D /* RKAuthClientFirebaseEmailHandler.h */,

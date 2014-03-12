@@ -4,6 +4,10 @@
 
 #import "RKAuthClientServices.h"
 
+@class FirebaseSimpleLogin;
+
 @interface RKAuthClientFirebaseTwitterHandler : NSObject <RKAuthClientTwitter>
+
+- (instancetype)initWithSimpleLogin:(FirebaseSimpleLogin *)simpleLogin;
 
 @end

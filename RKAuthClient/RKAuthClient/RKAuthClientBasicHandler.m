@@ -6,6 +6,10 @@
 
 - (void)checkAuthStatusWithBlock:(RKAuthClientUserBlock)block callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
+  if (!block) {
+    return;
+  }
   dispatch_async(callbackQueue, ^{
     NSError *error = [NSError errorWithDomain:kRKAuthClientErrorDomain
                                          code:RKAuthClientBasicHandlerErrorUnimplemented

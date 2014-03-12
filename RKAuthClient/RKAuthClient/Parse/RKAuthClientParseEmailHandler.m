@@ -11,6 +11,7 @@
                  completion:(RKAuthClientUserBlock)completionBlock
               callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
   } else if (!email || !password) {
@@ -60,6 +61,7 @@
             completion:(RKAuthClientUserBlock)completionBlock
          callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
   } else if (!email || !password) {
@@ -104,22 +106,23 @@
                     completion:(RKAuthClientSuccessBlock)completionBlock
                  callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
-  } else {
-    dispatch_async(callbackQueue, ^{
-      NSError *error = [NSError errorWithDomain:kRKAuthClientErrorDomain
-                                           code:RKAuthClientEmailHandlerErrorNotPossible
-                                       userInfo:nil];
-      completionBlock(error, NO);
-    });
   }
+  dispatch_async(callbackQueue, ^{
+    NSError *error = [NSError errorWithDomain:kRKAuthClientErrorDomain
+                                         code:RKAuthClientEmailHandlerErrorNotPossible
+                                     userInfo:nil];
+    completionBlock(error, NO);
+  });
 }
 
 - (void)sendPasswordResetForEmail:(NSString *)email
                        completion:(RKAuthClientSuccessBlock)completionBlock
                     callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
   } else if (!email) {
@@ -163,16 +166,16 @@
                  completion:(RKAuthClientSuccessBlock)completionBlock
               callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
-  } else {
-    dispatch_async(callbackQueue, ^{
-      NSError *error = [NSError errorWithDomain:kRKAuthClientErrorDomain
-                                           code:RKAuthClientEmailHandlerErrorNotPossible
-                                       userInfo:nil];
-      completionBlock(error, NO);
-    });
   }
+  dispatch_async(callbackQueue, ^{
+    NSError *error = [NSError errorWithDomain:kRKAuthClientErrorDomain
+                                         code:RKAuthClientEmailHandlerErrorNotPossible
+                                     userInfo:nil];
+    completionBlock(error, NO);
+  });
 }
 
 @end

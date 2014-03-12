@@ -12,7 +12,10 @@
                      completion:(RKAuthClientUserBlock)completionBlock
                   callbackQueue:(dispatch_queue_t)callbackQueue
 {
-  
+  NSAssert(callbackQueue, @"callback queue must not be nil");
+  if (!completionBlock) {
+    return;
+  }
   [PFTwitterUtils logInWithBlock:^(PFUser *user, NSError *error) {
     dispatch_async(callbackQueue, ^{
       if (!user) {
@@ -43,6 +46,10 @@
 - (void)disconnectFromTwitterWithCompletion:(RKAuthClientSuccessBlock)completionBlock
                               callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
+  if (!completionBlock) {
+    return;
+  }
   PFUser *user = [PFUser currentUser];
   [PFTwitterUtils unlinkUserInBackground:user block:^(BOOL succeeded, NSError *error) {
     dispatch_async(callbackQueue, ^{

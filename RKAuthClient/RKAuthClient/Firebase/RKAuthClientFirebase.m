@@ -3,6 +3,7 @@
 #import "RKAuthClientFirebase.h"
 
 #import <Firebase/Firebase.h>
+#import <FirebaseSimpleLogin/FirebaseSimpleLogin.h>
 
 #import "RKAuthClientFirebaseBasicHandler.h"
 #import "RKAuthClientFirebaseEmailHandler.h"
@@ -18,10 +19,11 @@
 
 + (RKAuthClientConfigurationBlock)defaultConfigurationWithFirebase:(Firebase *)firebase
 {
-  id<RKAuthClientBasic> basicHandler = [[RKAuthClientFirebaseBasicHandler alloc] init];
-  id<RKAuthClientEmail> emailHandler = [[RKAuthClientFirebaseEmailHandler alloc] init];
-  id<RKAuthClientFacebook> facebookHandler = [[RKAuthClientFirebaseFacebookHandler alloc] init];
-  id<RKAuthClientTwitter> twitterHandler = [[RKAuthClientFirebaseTwitterHandler alloc] init];
+  FirebaseSimpleLogin *simpleLogin = [[FirebaseSimpleLogin alloc] initWithRef:firebase];
+  id<RKAuthClientBasic> basicHandler = [[RKAuthClientFirebaseBasicHandler alloc] initWithSimpleLogin:simpleLogin];
+  id<RKAuthClientEmail> emailHandler = [[RKAuthClientFirebaseEmailHandler alloc] initWithSimpleLogin:simpleLogin];
+  id<RKAuthClientFacebook> facebookHandler = [[RKAuthClientFirebaseFacebookHandler alloc] initWithSimpleLogin:simpleLogin];
+  id<RKAuthClientTwitter> twitterHandler = [[RKAuthClientFirebaseTwitterHandler alloc] initWithSimpleLogin:simpleLogin];
 
   return [^(id<RKAuthClientConfiguration> configuration) {
     [configuration setBasicHandler:basicHandler];

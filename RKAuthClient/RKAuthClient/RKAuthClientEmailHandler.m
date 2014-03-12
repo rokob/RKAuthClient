@@ -9,6 +9,7 @@
                  completion:(RKAuthClientUserBlock)completionBlock
               callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
   }
@@ -31,6 +32,7 @@
             completion:(RKAuthClientUserBlock)completionBlock
          callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
   }
@@ -54,6 +56,7 @@
                     completion:(RKAuthClientSuccessBlock)completionBlock
                  callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
   }
@@ -75,6 +78,7 @@
                        completion:(RKAuthClientSuccessBlock)completionBlock
                     callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
   }
@@ -97,6 +101,7 @@
                  completion:(RKAuthClientSuccessBlock)completionBlock
               callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
   }

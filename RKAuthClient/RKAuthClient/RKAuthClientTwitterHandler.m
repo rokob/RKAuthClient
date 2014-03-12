@@ -9,6 +9,7 @@
                      completion:(RKAuthClientUserBlock)completionBlock
                   callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
   }
@@ -29,6 +30,7 @@
 - (void)disconnectFromTwitterWithCompletion:(RKAuthClientSuccessBlock)completionBlock
                               callbackQueue:(dispatch_queue_t)callbackQueue
 {
+  NSAssert(callbackQueue, @"callback queue must not be nil");
   if (!completionBlock) {
     return;
   }

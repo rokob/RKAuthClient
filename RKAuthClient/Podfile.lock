@@ -34,7 +34,7 @@ SPEC CHECKSUMS:
   Firebase: f88860bb05fde375a236bab7182ecc4e02fe5c93
   OCMock: 74e4ddbcef134170dcc844f91c691f13868075d7
   Parse: 6dd57f2af9f89dc6facc755cec4e96f8b739b1fb
-  RKAuthClient: 69018213aaf9e4872df66e8e5fd12b936b0a4780
+  RKAuthClient: b3ae4eb9b4c6c48ba2d49adde413d8b8e64374b6
   Specta: 2d06220591110c6d9757d8be8ecf8e63aa40dc2a
 
 COCOAPODS: 0.29.0
