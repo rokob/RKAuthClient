@@ -23,21 +23,21 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'RKAuthClient/RKAuthClient/**/*.h'
 
-  s.subspec 'Firebase' do |ss|
-    ss.dependency 'Firebase', '~> 1.0.0'
-    ss.dependency 'RKAuthClient/Core'
-    ss.frameworks = 'SystemConfiguration', 'Accounts', 'Social', 'FirebaseSimpleLogin'
-    ss.source_files = 'RKAuthClient/RKAuthClient/Firebase/**/*.{h,m}',
-                      'FirebaseSimpleLogin.framework/Versions/A/Headers/*.h'
-    ss.preserve_paths = 'FirebaseSimpleLogin.framework/*'
-    ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/FirebaseSimpleLogin"' }
-  end
-
-  s.subspec 'Parse' do |ss|
-    ss.dependency 'Parse', '~> 1.2.0'
-    ss.dependency 'RKAuthClient/Core'
-    ss.source_files = 'RKAuthClient/RKAuthClient/Parse/**/*.{h,m}'
-  end
+#  s.subspec 'Firebase' do |ss|
+#    ss.dependency 'Firebase', '~> 1.0.0'
+#    ss.dependency 'RKAuthClient/Core'
+#    ss.frameworks = 'SystemConfiguration', 'Accounts', 'Social', 'FirebaseSimpleLogin'
+#    ss.source_files = 'RKAuthClient/RKAuthClient/Firebase/**/*.{h,m}',
+#                      'FirebaseSimpleLogin.framework/Versions/A/Headers/*.h'
+#    ss.preserve_paths = 'FirebaseSimpleLogin.framework/*'
+#    ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/FirebaseSimpleLogin"' }
+#  end
+#
+#  s.subspec 'Parse' do |ss|
+#    ss.dependency 'Parse', '~> 1.2.0'
+#    ss.dependency 'RKAuthClient/Core'
+#    ss.source_files = 'RKAuthClient/RKAuthClient/Parse/**/*.{h,m}'
+#  end
 
   s.subspec 'Core' do |ss|
     ss.source_files = 'RKAuthClient/RKAuthClient/RKAuthClient.{h,m}',
